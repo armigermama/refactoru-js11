@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>hide-a-form</title>
+
+</head>
+<body>
+	<form id="hide-form">
+		<fieldset>
+			<legend>please identify yourself</legend>
+			<div>
+				<input type="text" size="100" id="user-name" placeholder="your name">
+			</div>
+			<div>
+				<input type="text" size="100" id="user-bio" placeholder="tell us about yourself">
+			</div>
+			<div>
+				<input type="text" size="100" id="user-books" placeholder="what are your favorite books">
+			</div>
+			<div>
+				<input type="text" size="100" id="user-fav-js" placeholder="what are your favorite javascript libraries">
+			</div>
+			<button id="submit-button">beam me up scotty</button>
+		</fieldset>
+	</form>
+	<div id="content">
+		<h3>your name is...</h3>
+		<p id="input-name"></p>
+		<h3>what you are all about...</h3>
+		<p id="input-bio"></p>
+		<h3>your favorite reads...</h3>
+		<p id="input-books"></p>
+		<h3>your most loved javascript libraries...</h3>
+		<p id="input-fav-js"></p>
+	</div>
+	<div>
+		<button id="show-button">beam me up scotty</button>
+		<button id="hide-button">activate cloaking device</button>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>

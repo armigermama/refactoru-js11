@@ -1,0 +1,16 @@
+body {
+	margin: 20px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+fieldset {
+	background-color: silver;
+}
+
+legend {
+	font-size: 18px;
+}
+
+#hide-form input {
+	font-size: 14px;
+}
