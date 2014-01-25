@@ -15,18 +15,33 @@
 
 $(document).ready (function(){
 
-	$('#submit-button').on('click', function(){
-		event.preventDefault();
+	// $('#submit-button').on('click', function(){
+	// 	event.preventDefault();
+	//  var names = $('.user-name').val();
+	//  var bios = $('.user-bio').val();
+	//  var books = $('.user-books').val();
+	//  var favJss = $('.user-fav-js').val();
+	// 	$('.input-name').text(names);
+	// 	$('.input-bio').text(bios);
+	// 	$('.input-books').text(books);
+	// 	$('.input-fav-js').text(favJss);
+	// });
 
-		var names = $('#user-name').val();
-		var bios = $('#user-bio').val();
-		var books = $('#user-books').val();
-		var favJss = $('#user-fav-js').val();
-		$('#input-name').text(names);
-		$('#input-bio').text(bios);
-		$('#input-books').text(books);
-		$('#input-fav-js').text(favJss);
-		console.log($('names'));
+//Bonus auto-save feature
+	$('.user').keyup(function(){
+		var names = $('.user-name').val();
+		var bios = $('.user-bio').val();
+		var books = $('.user-books').val();
+		var favJss = $('.user-fav-js').val();
+		$('.input-name').text(names);
+		$('.input-bio').text(bios);
+		$('.input-books').text(books);
+		$('.input-fav-js').text(favJss);
+	});
+
+	$('.hide-show').click(function(){
+		$('#hide-form').toggle();
+		$('.hide-show').toggle();
 
 	});
-}); 	
+});

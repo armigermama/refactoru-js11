@@ -3,45 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<title>hide-a-form</title>
+	<title>the final frontier</title>
 
 </head>
 <body>
-	<form id="hide-form">
-		<fieldset>
-			<legend>please identify yourself</legend>
-			<div>
-				<input type="text" size="100" id="user-name" placeholder="your name">
-			</div>
-			<div>
-				<input type="text" size="100" id="user-bio" placeholder="tell us about yourself">
-			</div>
-			<div>
-				<input type="text" size="100" id="user-books" placeholder="what are your favorite books">
-			</div>
-			<div>
-				<input type="text" size="100" id="user-fav-js" placeholder="what are your favorite javascript libraries">
-			</div>
-			<button id="submit-button">beam me up scotty</button>
-		</fieldset>
-	</form>
-	<div id="content">
-		<h3>your name is...</h3>
-		<p id="input-name"></p>
-		<h3>what you are all about...</h3>
-		<p id="input-bio"></p>
-		<h3>your favorite reads...</h3>
-		<p id="input-books"></p>
-		<h3>your most loved javascript libraries...</h3>
-		<p id="input-fav-js"></p>
-	</div>
-	<div>
-		<button id="show-button">beam me up scotty</button>
-		<button id="hide-button">activate cloaking device</button>
-	</div>
+	<div id="container">
+	<h1>hailing frequency open...</h1>
+		<form id="hide-form">
+			<fieldset>
+				<legend>please identify yourself</legend>
+				<div>
+					<input type="text" size="100" class="user user-name" placeholder="your name">
+				</div>
+				<div>
+					<input type="text" size="100" class="user user-bio" placeholder="tell us about yourself">
+				</div>
+				<div>
+					<input type="text" size="100" class="user user-books" placeholder="what are your favorite books">
+				</div>
+				<div>
+					<input type="text" size="100" class="user user-fav-js" placeholder="what are your favorite javascript libraries">
+				</div>
+				<button id="submit-button">beam me up scotty</button>
+			</fieldset>
+		</form>
+		<div id="content">
+			<h3>your name is...</h3>
+			<p class="input input-name"></p>
+			<h3>what you are all about...</h3>
+			<p class="input input-bio"></p>
+			<h3>your favorite books...</h3>
+			<p class="input input-books"></p>
+			<h3>your favorite javascript libraries...</h3>
+			<p class="input input-fav-js"></p>
 
-	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	<script src="main.js"></script>
+			<button class="hide-show"><span>hail the entry form</span></button>
+			<button class="hide-show hide"><span>activate cloaking device</span></button>
 
+		</div>
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script src="main.js"></script>
+	</div>
 </body>
 </html>
